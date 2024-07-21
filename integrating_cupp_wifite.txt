@@ -1,0 +1,33 @@
+
+import subprocess
+import os
+
+# Specify the directory path you want to change to
+new_directory = "/usr/share/dict/"
+
+# Change the current working directory
+os.chdir(new_directory)
+
+# Get the new current working directory
+current_directory = os.getcwd()
+
+# Function to call Cupp
+def generate_password_lists(target_info_file):
+    cupp_command = ["cupp", "-i" ]
+    subprocess.run(cupp_command)
+
+# Collect target information during WiFite's r>
+#target_info = 
+#Name: John Doe
+#Date of Birth: 1990-01-01
+#Interests: Soccer, Cooking, Travel
+
+
+# Write target information to a file
+target_info_file = "target_info.txt"
+#with open(target_info_file, "w") as file:
+#    file.write(target_info_file)
+
+# Call Cupp function with generated target inf>
+generate_password_lists(target_info_file)
+
